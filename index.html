@@ -5,29 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Школа иностранных языков -Easy Speak</title>
+    <link rel="preload" href="./fonts/ArialRegular.woff" as="font" crossorigin>
+    <link rel="preload" href="./fonts/ArialBold.woff" as="font" crossorigin>
+    <link rel="preload" href="./fonts/ArialBold.woff" as="font" crossorigin>
+    
+    <style>
+        :root{
+            --main-bg-color:#EAEAEA;
+            --dark-color:#153236;
+            --blue-color:#9CEEF9;
+            --stroke-color:#8EECF9;
+            --shadow-color:#C2F8FF;
+            --black-color:#000000;
+        }
+    </style>
+    <link rel="stylesheet" href="styles/normolize.css">
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container header__container">
             <img src="images/logo.svg" alt="логотип школы">
             <a href="tel:+7(914)8748448">+7(914)874-84-48</a>
         </div>
     </header>
     <main>
     <section class="hero">
-        <div class="container">
+        <div class="container hero__container">
             <div class="hero__content">
-                <h1 class="hero__subtitle">Online-школа
+                <h1 class="hero__title"><nobr>Online-школа</nobr>
                     <span class="hero__subtitle">иностранных языков</span>
                 </h1>
 
                 <div class="hero__description">
                     <p>Научиться новому&nbsp;&mdash; легко!</p>
-                    <p>Поможем преодолеть языковой барьер уже за&nbsp;3&nbsp;месяца обучения</p>
+                    <p>Поможем преодолеть языковой барьер</p><p> уже за&nbsp;3&nbsp;месяца обучения</p>
                 </div>
 
-                <button class="hero__button">
-                    Записаться на пробный урок
+                <button class="hero__button" onclick="alert('Peace!')">
+                    Записаться на пробный урок
                 </button>
 
                 <ul class="hero__languages">
