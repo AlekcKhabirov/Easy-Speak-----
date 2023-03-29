@@ -1,0 +1,132 @@
+html{
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    color:var(--dark-color);
+    background-color: var(--main-bg-color);
+}
+h1,ul,p{
+    margin: 0;
+}
+.container{
+    max-width: 1324px;
+    padding-left: 72px;
+    padding-right: 72px;
+    margin: 0 auto;
+}
+.header{
+    padding: 20px 0;
+}
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__phone{
+    font-weight: 700;
+    color: var(--black-color);
+    text-decoration: none;
+    background-image: url(../images/call.svg);
+    padding-left: 29px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.hero__container{
+    display: flex;
+    gap: 72px;
+}
+.hero_content{
+    padding-top: 85px;
+    max-width: 480px;
+}
+.hero__girl{
+    align-self: flex-end;
+}
+.hero__title{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 120%;
+    color: var(--dark-color);
+    margin-bottom: 20px;
+}
+.hero__subtitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+.hero__description{
+    max-width: 380px;
+    margin-bottom: 50px;
+    
+}
+.hero__button{
+    padding: 24px 57px;
+    gap: 10px;
+    background:var(--blue-color);
+    border: 1px solid var(--stroke-color);
+    box-shadow: 0px 16px 16px var(--shadow-color);
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--black-color);
+    cursor: pointer;
+    margin-bottom: 110px;
+}
+.hero__button:hover{
+    background-color: red;
+}
+.hero__button:focus{
+    background-color: #0066FF;
+}
+.hero__button:active{
+    background-color: #05FF00;
+}
+.hero__button:disabled{
+    
+}
+.hero__languages{
+    display: grid;
+    grid-template-columns:repeat(3,min-content);
+    gap: 9px 35px;
+    list-style:none;
+}
+.hero__language{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.hero__language::before{
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+.hero__language_yellow::before{background-color:#FFC700 ;
+
+}
+.hero__language_blue::before{background-color:#0066FF ;
+
+}
+.hero__language_red::before{background-color: #FF0000;
+
+}
+.hero__language_pink::before{background-color: #DB00FF;
+
+}
+.hero__language_powder::before{background-color: #DE7BAB;
+
+}
+.hero__language_green::before{background-color: #05FF00;
+
+}
