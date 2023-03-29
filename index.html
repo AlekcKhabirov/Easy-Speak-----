@@ -19,11 +19,12 @@
             --black-color:#000000;
         }
     </style>
-    <link rel="stylesheet" href="styles/normolize.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/default.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/hero.css">
     <link rel="stylesheet" href="styles/form.css">
+
 </head>
 <body>
     <header class="header">
@@ -64,5 +65,25 @@
         </div>
     </section>
 </main>
+<form>
+    <button type="button" onclick="close()" >X</button>
+    <h2 class="form__title"><nobr>Заполните форму</nobr>
+        <span>и&nbsp;мы&nbsp;свяжемся с&nbsp;вами!</span>
+    </h2>    
+    <p class="form__description">Наш специалист перезвонит вам в течении 1 часа</p>
+    <label>фамилия</label><input type="text">
+    <label>имя</label><input type="text" value="name">
+    <label>телефон</label><input type="tel">
+    <div>
+        <button class="hero__button" type="submit">
+        Записаться на пробный урок
+        </button>
+    </div>
+    <!--<script>
+        const myName ='Алик';
+        document.body.innerHTML=`<h2 class="title">Привет ${myName}</h2>
+        <p>Сейчас ${new Date().getFullYear()} год</p>`;
+    </script> -->   
+</form>
 </body>
 </html>
