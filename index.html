@@ -49,7 +49,7 @@
                     <p>Поможем преодолеть языковой барьер уже&nbsp;за&nbsp;3&nbsp;месяца обучения</p>
                 </div>
 
-                <button class="hero__button" onclick="alert('Peace!')">
+                <button class="hero__button main-button" onclick="alert('Peace!')">
                     Записаться на пробный урок
                 </button>
 
@@ -69,21 +69,37 @@
 <div class="modal">
     <div class="modal__body">
         <div class="modal__container">
-            <button type="button" onclick="close()" >X</button>
+           
             <h2 class="modal__title">Заполните форму               
-                <span>и&nbsp;мы&nbsp;свяжемся&nbsp;с&nbsp;вами!</span>
+                и&nbsp;мы&nbsp;свяжемся с&nbsp;вами!
             </h2> 
             <p class="modal__description">Наш специалист перезвонит вам в течении 1 часа</p>
-            <form>
-                <div class="list">
-                    <div class="pole"><label>фамилия</label><input type="text"></div>
-                    <div class="pole"><label>имя</label><input type="text" value="name"></div>
-                    <div class="pole"><label>телефон</label><input type="number"></div>
-                </div>
-                <button class="hero__button modal__button" type="submit">
+            <form action="https://jsonplaceholder.typicode.com/posts/1" method="post">
+                <fieldset class="form__fieldset">
+                    <label for="" class="form__label">
+                        <span class="form__label-text">фамилия</span>
+                        <input type="text" class="form__input" name="surname">
+                    </label>
+                    <label for="" class="form__label">
+                        <span class="form__label-text">имя</span>
+                        <input type="text" class="form__input" name="name">
+                    </label>
+                    <label for="" class="form__label">
+                        <span class="form__label-text">телефон</span>
+                        <input type="text" class="form__input" name="phone">
+                    </label>
+                </fieldset>
+                <button class="main-button hero__button modal__submit" type="submit">
                 Записаться на пробный урок
                 </button>
-            </form>                  
+            </form>
+            <button class="modal__close" type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    
+                    <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" />                   
+                    </svg>
+                    
+            </button>                  
         </div>
     </div>
 </div>
