@@ -12,7 +12,8 @@
 -git status 
 -git add -A 
 -git commit -m 'initial' 
--git diff -git diff --color-words 
+-git diff 
+-git diff --color-words 
 -git checkout index.js # восстановить 
 -git remote add origin https://github.com/AlekcKhabirov/modul1.git 
 -git push -u origin main 
